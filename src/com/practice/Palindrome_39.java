@@ -3,6 +3,7 @@ package com.practice;
 import java.util.Scanner;
 
 public class Palindrome_39 {
+
     public static void main(String[] args) {
 
 //        Scanner sc =new Scanner(System.in);
@@ -26,28 +27,28 @@ public class Palindrome_39 {
 //        }
 
         // Using  Method
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter");
-        int num = sc.nextInt();
-
-        int store = num;
-        int result = getPalindrome(num);
-
-        if(store == result){
-            System.out.println(store+" is palindrome number");
-        }
-        else{
-            System.out.println(store+" is not palindrome number");
-        }
-    }
-    static int getPalindrome(int n){
-
-        int result = 0;
-        while (n > 0){
-            int digit = n % 10;
-            result = result * 10 + digit;
-            n = n / 10;
-        }
-        return result;
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter");
+//        int num = sc.nextInt();
+//
+//        int store = num;
+//        int result = getPalindrome(num);
+//
+//        if(store == result){
+//            System.out.println(store+" is palindrome number");
+//        }
+//        else{
+//            System.out.println(store+" is not palindrome number");
+//        }
+//    }
+//    static int getPalindrome(int n){
+//
+//        int result = 0;
+//        while (n > 0){
+//            int digit = n % 10;
+//            result = result * 10 + digit;
+//            n = n / 10;
+//        }
+//        return result;
     }
 }
