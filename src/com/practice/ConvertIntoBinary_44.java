@@ -2,7 +2,7 @@ package com.practice;
 
 import java.util.Scanner;
 
-public class DecimalToBinary_44 {
+public class ConvertIntoBinary_44 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
