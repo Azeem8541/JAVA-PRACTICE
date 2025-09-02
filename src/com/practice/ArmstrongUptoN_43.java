@@ -9,11 +9,36 @@ public class ArmstrongUptoN_43 {
          WAP to display the Armstrong within 1 to N.
          */
 
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter...");
+//        int num = sc.nextInt();
+//
+//        for(int i=1; i<=num; i++){
+//
+//            int result = i;
+//            int sum = 0;
+//
+//            while (result > 0){
+//                int digit = result % 10;
+//                sum += digit * digit * digit;
+//                result = result / 10;
+//            }
+//            if(sum == i){
+//                System.out.println(i);
+//            }
+//        }
+
+        // Using Method
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter...");
+        System.out.println("Enter..");
         int num = sc.nextInt();
 
-        for(int i=1; i<=num; i++){
+        getArmstrong(num);
+    }
+    static int getArmstrong(int n){
+
+        for(int i=1; i<=n; i++){
 
             int result = i;
             int sum = 0;
@@ -27,5 +52,6 @@ public class ArmstrongUptoN_43 {
                 System.out.println(i);
             }
         }
+        return n;
     }
 }
