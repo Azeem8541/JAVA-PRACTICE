@@ -163,42 +163,42 @@ public class Pattern10_62 {
 
         // Invalid input handling
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter");
-        String input = sc.next();
-
-        if(input.length() != 1){
-            throw new IllegalArgumentException("Invalid input!\n Please enter only one Character");
-        }
-
-        char letter = input.charAt(0);
-
-        if(!Character.isLetter(letter)){
-            throw new IllegalArgumentException("Invalid input!\n Please enter only Character");
-        }
-
-        boolean hai = false;
-
-        for(int i=1; i<=5 && !hai; i++){
-
-            int j=1;
-            while (j<=5){
-                System.out.print(letter);
-
-                if(Character.isUpperCase(letter) && letter == 'Z'){
-                    hai = true;
-                    break;
-                }
-
-                if(Character.isLowerCase(letter) && letter == 'z'){
-                    hai = true;
-                    break;
-                }
-
-                letter++;
-                j++;
-            }
-            System.out.println();
-        }
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter");
+//        String input = sc.next();
+//
+//        if(input.length() != 1){
+//            throw new IllegalArgumentException("Invalid input!\n Please enter only one Character");
+//        }
+//
+//        char letter = input.charAt(0);
+//
+//        if(!Character.isLetter(letter)){
+//            throw new IllegalArgumentException("Invalid input!\n Please enter only Character");
+//        }
+//
+//        boolean hai = false;
+//
+//        for(int i=1; i<=5 && !hai; i++){
+//
+//            int j=1;
+//            while (j<=5){
+//                System.out.print(letter);
+//
+//                if(Character.isUpperCase(letter) && letter == 'Z'){
+//                    hai = true;
+//                    break;
+//                }
+//
+//                if(Character.isLowerCase(letter) && letter == 'z'){
+//                    hai = true;
+//                    break;
+//                }
+//
+//                letter++;
+//                j++;
+//            }
+//           System.out.println();
+//        }
     }
 }
